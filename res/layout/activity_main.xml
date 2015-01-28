@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/play_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/play_start" />
+
+    <Button
+        android:id="@+id/play_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_start"
+        android:layout_centerHorizontal="true"
+        android:text="@string/play_stop" />
+
+    <Button
+        android:id="@+id/record_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/play_start"
+        android:layout_centerHorizontal="true"
+        android:text="@string/record_stop" />
+
+    <Button
+        android:id="@+id/record_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/record_stop"
+        android:layout_centerHorizontal="true"
+        android:text="@string/record_start" />
+    
+
+    <Button
+        android:id="@+id/wav_to_opus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_stop"
+        android:layout_centerHorizontal="true"
+        android:text="@string/wav2opust" />
+
+    <Button
+        android:id="@+id/opus_to_wav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wav_to_opus"
+        android:layout_centerHorizontal="true"
+        android:text="@string/opus2wav" />
+
+    <Button
+        android:id="@+id/play_wav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opus_to_wav"
+        android:layout_centerHorizontal="true"
+        android:text="@string/paly_decode_wav" />
+
+</RelativeLayout>
